@@ -21,11 +21,35 @@
 "LOAD_DATA_MESSAGE"= "Загрузка данных";
 "NO" = "Нет";
 "YES" = "Да";
+"SUCCESS" = "Успешно";
+"FOR_FREE" = "Бесплатно";
+"SAVING" = "Сохраняю";
+"SAVED" = "Сохранено";
+"LOADING" = "Загружаю";
+"ENTER" = "Войти";
+"CONTINUE"= "Продолжить";
+
+// Errors
+"ERROR.NOT_AUTHORIZED" = "Необходимо войти в систему";
+"ERROR.SERVER" = "Ошибка сервера (%@)";
+"ERROR.WRONG_SERVER_ANSWER" = "Неверный ответ сервера";
+"ERROR.NOT_COMPLETE_SERVER_RESPONSE" = "Неполный ответ сервера";
+"ERROR.PROMOCODE.INCORRECT"= "Неверный промокод";
+
+// TMKPerson
+"TMK_PERSON.FIRST_NAME" = "Дежурный врач";
+
+// MainVC
+"TAB_BAR.DOCTORS" = "Врачи";
+"TAB_BAR.APPOINTMENTS" = "Консультации";
+"TAB_BAR.FILES" = "Мои файлы";
+"TAB_BAR.PROFILE" = "Мой кабинет";
+"TAB_BAR.NOT_LOGGED_IN" = "Войти";
 
 // DoctorListViewController
 "SPECIALIST_1" = "Терапевт";
 "SPECIALIST_2" = "Педиатр";
-"SPECIALIST_CALL_YOU_TEXT" = "В течение нескольких минут\n врач с Вами свяжется";
+"SPECIALIST_CALL_YOU_TEXT" = "В течение 5 минут \nврач с Вами свяжется";
 "DOCTOR_LIST_VC.DUTY_DOCTOR.NOT_AVAILABLE" = "не доступен";
 "DOCTOR_LIST_VIEW_CONTROLLER.LOADING_DOCTORS_LIST.ERROR" = "Ошибка загрузки списка врачей: ";
 "DOCTOR_LIST_VIEW_CONTROLLER.DOCTOR_CANT_BE_ADDED" = "Невозможно добавить врача в избранные. Пожалуйста обновите страницу";
@@ -33,6 +57,7 @@
 "DOCTOR_LIST_VIEW_CONTROLLER.SELECT_DOCTOR_CATEGORY.ALERT.TITLE" = "Категория врача";
 "DOCTOR_LIST_VIEW_CONTROLLER.SELECT_DOCTOR_CATEGORY.ALERT.MESSAGE" = "Выберите возрастную категорию врача";
 "DOCTOR_LIST_VIEW_CONTROLLER.DOCTORS_LIST_VIEW_CONTROLLER.TAB_BAR_ITEM.TITLE" = "Врачи";
+"DOCTOR_LIST_VC.NOTFOUND.TITLE" = "Не найдено подходящих специалистов";
 
 // TMKDoctor
 "SPECIALITY_1" = "Врач-терапевт";
@@ -43,22 +68,38 @@
 "REGISTRATION_BUTTON_TEXT" = "Зарегистрироваться";
 
 // AppointmentConfirmViewController
-"SPECIALIST_WILL_SEE_YOU_TEXT" = "Вас примут в течении 5 минут";
+"SPECIALIST_WILL_SEE_YOU_TEXT" = "Вас примут в течение 5 минут";
 "APPOINTMENT_PAY_IS_CANCELLED"= "К сожалению, консультация была отменена. Деньги будут перечислены на ваш счет в личном кабинете и вы сможете записаться на консультацию снова. Для возврата денег на карточку обратитесь по телефону";
+"APPOINTMENT_CONFIRM_VIEW_CONTROLLER.TERM_OF_USE.FULL" = "Я принимаю \n условия Соглашений";
+"APPOINTMENT_CONFIRM_VIEW_CONTROLLER.TERM_OF_USE.FIRST" = "Я принимаю";
+"APPOINTMENT_CONFIRM_VIEW_CONTROLLER.TERM_OF_USE.SECOND" = "условия Соглашений";
+"APPOINTMENT_CONFIRM_VC.TITLE" = "Новая консультация";
+"APPOINTMENT_CONFIRM_VIEW_CONTROLLER.PROMOCODE_LBL.TITLE" = "Добавить промокод";
+"APPOINTMENT_CONFIRM_VIEW_CONTROLLER.ALERT.TITLE" = "Промокод";
 
 // ProfileViewController
 "LOGOUT_MESSAGE" = "Вы действительно хотите выйти?";
-"FILTER_SPECIALITY_INIT_TITLE_BUTTON" = "Все специальности";
+"PROFILE.FAMILY_ACCOUNT_BUTTON.TO_ACCOUNT.TITLE" = "Перейти в семейный кабинет";
+"PROFILE.FAMILY_ACCOUNT_BUTTON.CREATE.TITLE" = "Создать семейную группу";
+"PROFILE.FAMILY_ACCOUNT.LOADING" = "Создание семейной группы..";
+"PROFILE.GROUP_CREATED.ALERT.TITLE" = "Создание";
+"PROFILE.GROUP_CREATED.ALERT.MESSAGE" = "Семейная группа успешно создана";
+"PROFILE.CREATE_FAMILY_ACCOUNT.ERROR" = "Не удалось создать семейную группу";
+"PROFILE_VIEW_CONTROLLER.PROGRESS.RETURN_TO_OWN_ACCOUNT" = "Возврат в свою учетную запись..";
 
 // Duty doctors
 "DUTY_DOCTOR_FIRST_HEADER" = "Дежурный врач";
 "DUTY_DOCTOR_SECOND_HEADER" = "Прием специалиста";
-"DUTY_DOCTOR_FIRST_DESCRIPTION" = "Бесплатная онлайн консультация\n 10 минут в режиме живой очереди";
+"DUTY_DOCTOR_FIRST_DESCRIPTION" = "Бесплатная онлайн консультация\n 5 минут в режиме живой очереди";
 "DUTY_DOCTOR_SECOND_DESCRIPTION" = "Выбрать удобное вам время для консультации профильного специалиста";
 "FILTER_SPECIALITY_INIT_TITLE_BUTTON" = "Все специальности";
 "DUTY_DOCTORS_NOT_AVAILABLE"= "К сожалению, сейчас врач не может\n вас принять";
 "DUTY_NOT_STARTED_YET"= "Прием еще не начался";
 "DUTY_IS_ENDED"= "На сегодня прием окончен";
+
+// SpecialistsTitleView
+"SPECIALISTS_TITLE_VIEW.TITLE" = "Прием специалиста";
+"SPECIALISTS_TITLE_VIEW.DESCRIPTION" = "Выбрать удобное вам время для консультации\n профильного специалиста";
 
 // DutyDoctorsVC
 "DUTY_DOCTORS_VC.DOCTOR_CANT_BE_ADDED.ALLERT.MESSAGE" = "Невозможно добавить врача в избранные. Пожалуйста обновите страницу";
@@ -68,9 +109,197 @@
 "EMAIL_IS_INCORRECT_MESSAGE" = "Некорректный адрес эл.почты";
 "REGISTER_EMAIL_IS_EXIST"= "Пользователь с так почтой уже зарегистрирован. Хотите восстановить пароль?";
 "REGISTER_PHONE_IS_EXIST"= "Пользователь с таким телефоном уже зарегистрирован. Хотите восстановить пароль?";
+"REGISTER_VIEW_CONTROLLER.TERM_OF_USE.FULL" = "Я принимаю\nусловия Соглашений";
+"REGISTER_VIEW_CONTROLLER.TERM_OF_USE.FIRST" = "Я принимаю";
+"REGISTER_VIEW_CONTROLLER.TERM_OF_USE.SECOND" = "условия Соглашений";
+"REGISTER_VIEW_CONTROLLER.EMAIL.VALIDATION.ERROR" = "email введен не верно";
+"REGISTER_VC.REGISTER.BUTTON" = "Продолжить";
+"REGISTER_VC.LABEL.PASSWORD_FROM_SMS" = "Если пароль не указан, им будет код из смс";
+"REGISTER_VC.EMAIL.TITLE" = "E-mail";
+"REGISTER_VC.PHONE.TITLE" = "Телефон";
 
 // RegisterCompleteVC
 "REGISTRATION_COMPLETE_DESCRIPTION" = "Заполните форму для получения максимально качественного обслуживания и ДМС скидки";
+"REGISTER_COMPLETE_VC.LAST_NAME.TITLE" = "Фамилия";
+"REGISTER_COMPLETE_VC.FIRST_NAME.TITLE" = "Имя";
+"REGISTER_COMPLETE_VC.MIDDLE_NAME.TITLE" = "Отчество";
+"REGISTER_COMPLETE_VC.BIRTHDAY.TITLE" = "Дата рождения";
+"REGISTER_COMPLETE_VC.SKIP.BUTTON" = "Пропустить";
+"REGISTER_COMPLETE_VC.REGISTER.BUTTON" = "Готово";
+
+// ConditionsCountView
+"CONDITIONS_COUNT_HAS_NO_CONDITIONS"= "Нет";
+"CONDITIONS_COUNT_TITLE"= "Условия обслуживания";
+
+// ConditionsVC
+"CONDITIONS_VC_TITLE"= "Условия обслуживания";
+"CONDITIONS_VC_SUBTITLE"= "Личный профиль";
+"CONDITION_ADD_NAVIGATION_TITLE" = "Добавить";
+
+// ConditionDetailsVC
+"CONDITION_DETAILS_VC_TITLE" = "Условия обслуживания";
+"CONDITION_DETAILS_VC_SUBTITLE" = "Личный профиль";
+"CONDITION_DETAILS.DOCTOR_SPECIALITY.TITLE" = "Специализация врача";
+"CONDITION_DETAILS.APPOINTMENTS_COUNT"= "Количество консультаций";
+"CONDITION_DETAILS.USED_COUNT"= "Количество проведено";
+"CONDITION_DETAILS.DISCOUNT"= "Размер скидки";
+"CONDITION_DETAILS.BUY.DATE"= "Дата покупки";
+"CONDITION_DETAILS.END.DATE"= "Дата окончания действия";
+"CONDITIONS.UNLIMIT" = "Не ограничено";
+"CONDITION.SPECIALIST" = "Узкий специалист";
+"CONDITION.DUTY_DOCTOR" = "Дежурный доктор";
+"CONDITION.END.INFINITLY" = "Бессрочно";
+"CONDITION.ALL_SPECIALITIES" = "Все";
+
+// BalanceView
+"BALANCE_VIEW.TITLE" = "Баланс";
+"BALANCE_VIEW.BUTTON" = "Пополнить";
+
+// FamilyProfileVC
+"FAMILY_PROFILE_VC_TITLE" = "Семейный кабинет";
+"FAMILY_PROFILE.PAY_ALERT.TITLE" = "Пополнение счета";
+"FAMILY_PROFILE.PAY_ALERT.MESSAGE" = "Введите сумму в рублях для зачисления";
+"FAMILY_PROFILE.PAYMENT.AMOUNT" = "1000";
+"FAMILY_PROFILE.PAY_ALERT.OK" = "Пополнить";
+"FAMILY_PROFILE.PAY_SUCCESS_ALERT.MESSAGE" = "Счет успешно пополнен";
+"FAMILY_PROFILE.REMOVE_FAMILY_ACC.ALERT.TITLE" = "Удалить семейный профиль?";
+"FAMILY_PROFILE.REMOVE_FAMILY_ACC.ALERT.MESSAGE" = "Подтвердите удаление";
+"FAMILY_PROFILE.REMOVE_FAMILY_ACC.ALERT.OK" = "Удалить";
+"FAMILY_PROFILE.REMOVE_FAMILY_ACC.PROGRESS" = "Удаление..";
+
+// GroupRole
+"GROUP_ROLE.TITLE.OWNER" = "Взрослый, администратор";
+"GROUP_ROLE.TITLE.ADULT" = "Взрослый";
+"GROUP_ROLE.TITLE.CHILD" = "Ребенок";
+
+// GroupMemberStackView
+"GROUP_MEMBER_STACK_VIEW.TITLE" = "Участники";
+"GROUP_MEMBER_STACK_VIEW.ADD_MEMBER_BUTTON.TITLE" = "Добавить";
+
+// RegisterNewUserForGroupVC
+"REGISTER_FOR_GROUP.FIRST_NAME.TITLE" = "Имя";
+"REGISTER_FOR_GROUP.LAST_NAME.TITLE" = "Фамилия";
+"REGISTER_FOR_GROUP.MIDDLE_NAME.TITLE" = "Отчество";
+"REGISTER_FOR_GROUP.BIRTHDAY.TITLE" = "Дата рождения";
+"REGISTER_FOR_GROUP.PHONE.TITLE" = "Телефон";
+"REGISTER_FOR_GROUP.EMAIL.TITLE" = "Почта";
+"REGISTER_FOR_GROUP.LOGIN.TITLE" = "Логин";
+"REGISTER_FOR_GROUP.FIRST_NAME.VALIDATION.REQUIRED" = "Необходимо ввести имя";
+"REGISTER_FOR_GROUP.LAST_NAME.VALIDATION.REQUIRED" = "Необходимо ввести фамилию";
+"REGISTER_FOR_GROUP.BIRTHDAY.VALIDATION.REQUIRED" = "Необходимо ввести дату рождения";
+"REGISTER_FOR_GROUP.PHONE.VALIDATION.REQUIRED" = "Необходимо ввести телефон";
+"REGISTER_FOR_GROUP.PHONE.VALIDATION.PATTERN" = "Не верный формат телефона";
+"REGISTER.EMAIL.VALIDATION.REQUIRED" = "Необходимо ввести e-mail";
+"REGISTER.EMAIL.VALIDATION.PATTERN" = "Не верный формат e-mail";
+"REGISTER.BUTTON.TITLE"= "Зарегистрировать";
+"REGISTER_NEW_PATIENT.ERROR.NOT_LOGGINED.MESSAGE" = "Необходимо залогиниться";
+"REGISTER_NEW_PATIENT_FOR_GROUP.TITLE" = "Регистрация пациента";
+"REGISTER_NEW_USER_FOR_GROUP.PROGRESS.TITLE" = "Регистрация пациента";
+"REGISTER_NEW_USER_FOR_GROUP.PROGRESS.SUB_TITLE" = "Обработка..";
+"REGISTER_NEW_PATIENT.ERROR.DUPLICATE_LOGIN" = "Данный логин уже существует";
+"REGISTER_NEW_PATIENT.ERROR.DUPLICATE_PHONE" = "Такой номер телефона уже зарегистрирован в нашей системе";
+"REGISTER_NEW_PATIENT.ERROR.DUPLICATE_EMAIL" = "Такой адрес электронной почты уже зарегистрирован в нашей системе";
+
+// RegistrationValidationErrors
+"REGISTER.FIRST_NAME.VALIDATION.REQUIRED" = "Необходимо ввести имя";
+"REGISTER.LAST_NAME.VALIDATION.REQUIRED" = "Необходимо ввести фамилию";
+"REGISTER.BIRTHDAY.VALIDATION.REQUIRED" = "Необходимо ввести дату рождения";
+"REGISTER.PHONE.VALIDATION.REQUIRED" = "Необходимо ввести телефон";
+"REGISTER.PHONE.VALIDATION.PATTERN" = "Не верный формат телефона";
+
+
+// ProfileTypeSelectorView
+"PROFILE_TYPE_SELECTOR.TITLE" = "Тип профиля";
+"PROFILE_TYPE_SELECTOR.BUTTON.LEFT.TITLE" = "Взрослый";
+"PROFILE_TYPE_SELECTOR.BUTTON.RIGHT.TITLE" = "Ребенок";
+
+// AcceptAgreementsView
+"ACCEPT_AGREEMENT.TITLE.ONE" = "Регистрируясь вы соглашаетесь с";
+"ACCEPT_AGREEMENT.TITLE.TWO" = "\n условиями оказания услуг";
+
+// ConfirmPhoneModalVC
+"CONFIRM_PHONE_MODAL_VC.TITLE" = "Подтверждение телефона";
+"CONFIRM_PHONE_MODAL_VC.SUB_TITLE" = "Код отправлен по СМС";
+"CONFIRM_PHONE_MODAL_VC.ENTER_CODE" = "Введите код";
+"CONFIRM_PHONE_MODAL_VC.RESEND_BUTTON" = "Отправить повторно";
+"CONFIRM_PHONE_MODAL_VC.NEXT_BUTTON" = "Продолжить";
+"CONFIRM_PHONE_MODAL_VC.PROGRESS.RESEND.TITLE"= "SMS код";
+"CONFIRM_PHONE_MODAL_VC.PROGRESS.RESEND.SUB_TITLE" = "Повторная отправка";
+"CONFIRM_PHONE_MODAL_VC.PROGRESS.RESEND.ERROR.MESSAGE" = "Произошла ошибка при повторной отправке SMS кода";
+"CONFIRM_PHONE_MODAL_VC.PROGRESS.NEXT.ERROR.MESSAGE" = "Введен неверный код";
+"CONFIRM_PHONE_MODAL_VC.PROGRESS.NEXT.TITLE"= "Проверка кода и регистрация";
+"CONFIRM_PHONE_MODAL_VC.PROGRESS.NEXT.SUB_TITLE" = "Обработка...";
+"CONFIRM_PHONE_MODAL_VC.RESEND_TITLE" = "Отправить повторно:";
+"CONFIRM_PHONE_MODAL_VC.RESEND_CODE.ALERT.TITLE" = "Проверочный код";
+"CONFIRM_PHONE_MODAL_VC.RESEND_CODE.ALERT.MESSAGE" = "успешно отправлен повторнно";
+"CONFIRM_PHONE_MODAL_VC.CHECK_CONFIRMATION_CODE.INCORRECT" = "Введен неверный код";
+
+// RegisterNewPatientForGroupViewModel
+"REGISTER_NEW_PATIENT_FOR_GROUP_VIEW_MODEL.CHECK_CODE_CONFIRMATION.ERROR.MESSAGE" = "Введен неверный код";
+
+// SearchPatientForGroupVC
+"SEARCH_PATIENT_FOR_GROUP_VC.TITLE" = "Поиск пользователя";
+"SEARCH_PATIENT_FOR_GROUP_VC.INPUT_TITLE" = "Электронная почта, телефон или логин";
+"SEARCH_PATIENT_FOR_GROUP_VC.SEARCH_BUTTON.TITLE" = "Найти";
+"SEARCH_PATIENT_FOR_GROUP_VC.SEARCH_INPUT.VALIDATION.REQUIRED" = "Необходимо ввести строку поиска";
+"SEARCH_PATIENT_FOR_GROUP_VC.SEARCH_RESULT.NOTHING" = "Такие пациенты не найдены";
+"SEARCH_PATIENT_FOR_GROUP_VC.SEARCH_RESULT.THE_SAME_PATIENT" = "Найден пациент %@ Это вы.";
+"SEARCH_PATIENT_FOR_GROUP_VC.SEARCH_RESULT.SUCCESS" = "Найден пациент %@.";
+"SEARCH_PATIENT_FOR_GROUP_VC.SEARCH_RESULT.SUCCESS.DESCRIPTION" = "Для добавления пользователя в семейную группу на его телефон %@ будет выслано СМС с кодом подтверждения";
+"SEARCH_PATIENT_FOR_GROUP_VC.SEARCH_RESULT.HAS_GROUP_ALREADY.DESCRIPTION" = "Он уже состоит в семейной группе. Для добавления в вашу семейную группу он должен быть исключен из другой группы";
+"SEARCH_PATIENT_FOR_GROUP_VC.SEARCH_RESULT.LIST.SUCCESS" = "Найдено: ";
+"SEARCH_PATIENT_FOR_GROUP_VC.CONFIRM.BUTTON" = "Получить СМС";
+"SEARCH_PATIENT_FOR_GROUP_VC.PROGRESS.TITLE" = "SMS код";
+"SEARCH_PATIENT_FOR_GROUP_VC.PROGRESS.SUB_TITLE" = "Отправка";
+"SEARCH_PATIENT_FOR_GROUP_VC.CONFIRMATION.ERROR" = "Не удалось отправить код";
+"SEARCH_PATIENT_FOR_GROUP_VC.ADDED.SUCCESS.TITLE" = "Успешно";
+"SEARCH_PATIENT_FOR_GROUP_VC.ADDED.SUCCESS.MESSAGE" = "Пользователь добавлен в группу";
+
+// AddToGroupVC
+"ADD_TO_GROUP.REGISTER.BUTTON.TITLE" = "Создать учетную запись";
+"ADD_TO_GROUP.SEARCH.BUTTON.TITLE" = "Добавить \nзарегистрированного пользователя";
+
+// SearchPatientForGroupViewModel
+"SEARCH_PATIENT_FOR_GROUP_VIEW_MODEL.SEARCH.ERROR" = "Системная ошибка при попытке поиска";
+"SEARCH_PATIENT_FOR_GROUP_VIEW_MODEL.SEARCH.ERROR.NOT_LOGGED_IN.MESSAGE" = "Необходимо залогиниться";
+
+// SearchPatientResultCell
+"SEARCH_PATIENT_RESULT_CELL.IN_GROUP" = "Уже состоит в группе";
+"SEARCH_PATIENT_RESULT_CELL.ADD_TO_GROUP.BUTTON" = "Выбрать";
+
+// TwoDutyDoctorsView
+"TWO_DUTY_DOCTORS_VIEW.TITLE" = "Срочная консультация";
+"TWO_DUTY_DOCTORS_VIEW.SUB_TITLE" = "В течение 5 минут \nврач с Вами свяжется";
+
+// DutyDoctorBlockView
+"DUTY_DOCTOR_BLOCK_VIEW.BUTTON" = "Начать консультацию";
+
+// GroupMemberInfoView
+"GROUP_MEMBER_INFO_VIEW.BECOME_HIM.BUTTON" = "Войти как %@";
+"GROUP_MEMBER_INFO_VIEW.RETURN_TO_OWN_ACCAUNT.BUTTON" = "Вернуться в свою учетную запись";
+
+// MemberProductDetailsVC
+"MEMBER_PRODUCT_DETAILS_VC.TITLE" = "Условия обслуживания";
+
+// GroupMemberProfileVC
+"GROUP_MEMBER_PROFILE_VC.PRODUCTS_COUNT_IS_ZERO" = "Нет активных продуктов";
+"GROUP_MEMBER_PROFILE_VC.ADD_PRODUCT.BUTTON" = "Добавить";
+"GROUP_MEMBER_PROFILE_VC.EXCLUDE.ALERT.TITLE" = "Исключить пользователя из семейной группы";
+"GROUP_MEMBER_PROFILE_VC.EXCLUDE.ALERT.MESSAGE" = "Вы действительно хотите исключить пользователя из семейной группы?";
+"GROUP_MEMBER_PROFILE_VC.EXCLUDE_SUCCESS.ALERT.TITLE" = "Пользователь успешно исключен";
+"GROUP_MEMBER_PROFILE_VC.EXCLUDE.BUTTON" = "Исключить";
+"GROUP_MEMBER_PROFILE_VC.EXCLUDE.PROGRESS.TITLE" = "Исключаем участника";
+"GROUP_MEMBER_PROFILE_VC.PROGRESS.LOGIN_AS_MEMBER" = "Вход в учетную запись..";
+"GROUP_MEMBER_PROFILE_VC.PROGRESS.RETURN_TO_OWN_ACCOUNT" = "Возврат в свою учетную запись..";
+
+"GROUP_MEMBER_PROFILE_VIEW_MODEL.IMPOSSIBLE_ADD_PRODUCT.ERROR.NO_PRODUCT" = "Разрешено только подключение продуктов";
+"GROUP_MEMBER_PROFILE_VIEW_MODEL.IMPOSSIBLE_ADD_PRODUCT.ERROR.NO_VACANSIES" = "Продукт нельзя назначить, потому что все места уже заняты ( %d взрослых, %d детских)";
+
+// SelectProductForMemberVC
+"SELECT_PRODUCT_FOR_MEMBER_VC.TITLE" = "Выбор продукта";
+"SELECT_PRODUCT_FOR_MEMBER_VC.SUB_TITLE" = "Включить пользователя в продукт";
+"SELECT_PRODUCT_FOR_MEMBER_VC.ADD_PRODUCT.BUTTON" = "Готово";
+"SELECT_PRODUCT_FOR_MEMBER_VC.EMPTY_CONDITIONS.LABEL" = "Невозможно добавить пользователя, т.к. вы еще не купили ни одного семейного продукта";
 
 // Chat
 "CHAT.ACCEPT_VIDEO" = "Пациент принял видеовызов";
@@ -78,29 +307,29 @@
 "CHAT.NO_ACCESS_TO_MICROPHONE" = "Доступ к микрофону запрещен";
 "CHAT.NO_ACCESS_TO_CAMERA" = "Доступ к камере запрещен";
 
-// TwoDutyDoctorsView
-"TWO_DUTY_DOCTORS_VIEW.TITLE" = "Срочная консультация";
-"TWO_DUTY_DOCTORS_VIEW.SUB_TITLE" = "В течение нескольких минут \nврач с Вами свяжется";
-
-// DutyDoctorBlockView
-"DUTY_DOCTOR_BLOCK_VIEW.BUTTON" = "Начать консультацию";
-
 //AppointmentListViewController
-"APPOINTMENT_LIST_VIEW_CONTROLLER.CANCELL.CONFIRMATION_MESSAGE" = "Вы уверены, что хотите отменить консультацию? \nДеньги будут перечислены на ваш счет в личном кабинете и вы сможете записаться на консультацию снова. \nДля возврата денег на карточку обратитесь по телефону \n%@";
-"APPOINTMENT_LIST_VIEW_CONTROLLER.CONTACT_WITH_DOCTOR.BUTTON" = "Связаться с врачом";
+"APPOINTMENT_LIST_VIEW_CONTROLLER.TITLE" = "Консультации";
+"APPOINTMENT_LIST_VIEW_CONTROLLER.CANCELL.CONFIRMATION_MESSAGE" = "Вы уверены, что хотите отменить консультацию? Деньги будут перечислены на Ваш счет и Вы сможете записаться снова.";
+"APPOINTMENT_LIST_VIEW_CONTROLLER.CANCELL.CONFIRMATION_MESSAGE.HOLD_PAYMENT" = "Вы уверены, что хотите отменить консультацию? Деньги будут возвращены Вам на карту.";
+"APPOINTMENT_LIST_VIEW_CONTROLLER.CANCELL.CONFIRMATION_MESSAGE.FREE" = "Вы уверены, что хотите отменить консультацию?";
+"APPOINTMENT_LIST_VIEW_CONTROLLER.CONTACT_WITH_DOCTOR.BUTTON" = "Связаться со специалистом";
 
 // DoctorViewController
 "DOCTOR_VIEW_CONTROLLER.TITLE" = "О враче";
 "DOCTOR_VIEW_CONTROLLER.ABOUT_DOCTOR_TITLE" = "О враче";
 
 // FileListVC
-"FILE_LIST_VC.CONTACT_WITH_DOCTOR.BUTTON" = "Связаться с врачем";
+"FILE_LIST_VC.CONTACT_WITH_DOCTOR.BUTTON" = "Связаться с врачом";
 "FILE_LIST_VC.FILE_LIST_DESCRIPTION" = "В этом списке будет отображаться список ваших файлов (документов)\n\nПолучите срочную помощь у дежурного врача или запишитесь к специалисту, чтобы создать свою первую консультацию.";
 
 // CHAT_VC
 "CHAT_VC.DOCTOR_NOT_CONNECTED" = "Врач не подключен";
 "CHAT_VC.DISCLAIMER" = "В ожидании начала консультации, Вы можете задать вопросы врачу и приложить необходимые изображения";
 "CHAT_VC.SELECT_RATING.MESSAGE" = "Пожалуйста, поставьте оценку врачу за качество оказанной услуги. Допустимы значения от 1 до 5";
+"CHAT_VC.MESSAGE.CONSULTATION_WILL_BEGIN" = "Консультация начнется в течение 5 минут";
+"CHAT_VC.MESSAGE.CONSULTATION_WILL_BEGIN.IN_TIME" = "Консультация начнется %@ в %@\nВ назначенное время врач свяжется с вами";
+"CHAT_VC.TITLE.UNRECOGNIZED" = "Консультация";
+"CHAT_VC.SELECT_FILE.ALLERT.MESSAGE" = "Список приложенных документов";
 
 // TMKNotificationSettingsType
 "NOTIFICATION.APPOINTMENT_CREATED" = "Запись на консультацию";
@@ -154,3 +383,138 @@
 "TMK_CALL_VIEW_CONTROLLER.NO_AUDIO_PERMISSION.ALERT.MESSAGE" = "Для полноценной работы, чтобы совершать видео и аудио звонки, приложению необходим доступ к микрофону и камере";
 "TMK_CALL_VIEW_CONTROLLER.PERMISSION.CANCEL" = "Запретить";
 "TMK_CALL_VIEW_CONTROLLER.PERMISSION.PERMIT" = "Разрешить";
+
+// DutyDoctorOfflineView
+"DUTY_DOCTOR_OFFLINE_VIEW.HEADER" = "Запись на очный прием";
+"DUTY_DOCTOR_OFFLINE_VIEW.DESCRIPTION" = "Запись на прием осуществляется через единую ортопедическую справочную";
+
+// ForgotPasswordViewController
+"FORGOT_PASSWORD_VIEW_CONTROLLER.TITLE" = "Восстановление пароля";
+"FORGOT_PASSWORD_VIEW_CONTROLLER.SEND_SMS_CODE.TITLE" = "Восстановление пароля";
+"FORGOT_PASSWORD_VIEW_CONTROLLER.RESTORE_BUTTON.TITLE" = "Восстановить пароль";
+"FORGOT_PASSWORD_VIEW_CONTROLLER.INPUT.PLACEHOLDER" = "E-mail / Телефон";
+"FORGOT_PASSWORD_VIEW_CONTROLLER.DESCRIPTION" = "";
+
+// ProfileChangePasswordVC
+"PROFILE_CHANGE_PASSWORD_VC.TITLE" = "Изменение пароля";
+"PROFILE_CHANGE_PASSWORD_VC.PROGRESS.TITLE" = "Изменение пароля";
+"PROFILE_CHANGE_PASSWORD_VC.UPDATE.SUCCESS.MESSAGE" = "Пароль успешно изменен";
+"PROFILE_CHANGE_PASSWORD_VC.CHANGE_PASSWORD_BUTTON.TITLE" = "Изменить пароль";
+
+// LoginViewController
+"LOGIN_VIEW_CONTROLLER.REGISTER_BUTTON.TITLE" = "Зарегистрироваться";
+"LOGIN_VIEW_CONTROLLER.LOGIN.PLACEHOLDER" = "Логин";
+
+// TMKClientRest
+"TMK_CLIENT_REST.LOGIN.NOT_VALID_LOGIN_OR_PASSWORD"= "Неверный логин/пароль";
+"TMK_CLIENT_REST.LOGIN.NO_PRODUCT" = "К сожалению, Вы не являетесь застрахованным по программе Добровольного медицинского страхования «Телемедицина»";
+
+// PreLoaderView
+"PRE_LOADER_VIEW.LABEL" = "Загрузка..";
+
+// DoctorListFilterBlockView
+"DOCTOR_LIST_FILTER_BLOCK_VIEW.SELECT_DOCTOR_CATEGORY.ALERT.TITLE" = "Категория врача";
+"DOCTOR_LIST_FILTER_BLOCK_VIEW.SELECT_DOCTOR_CATEGORY.ALERT.MESSAGE" = "Выберите возрастную категорию врача";
+"DOCTOR_LIST_FILTER_BLOCK_VIEW.FILTER_AGE.TITLE.ALL" = "Для всех";
+"DOCTOR_LIST_FILTER_BLOCK_VIEW.FILTER_AGE.TITLE.CHILDREN" = "Для детей";
+"DOCTOR_LIST_FILTER_BLOCK_VIEW.FILTER_AGE.TITLE.ADULTS" = "Для взрослых";
+"DOCTOR_LIST_FILTER_BLOCK_VIEW.FILTER_SPECIALITY.TITLE" = "Все специальности";
+"DOCTOR_LIST_FILTER_BLOCK_VIEW.SELECT_DOCTOR.ALLERT.TITLE" = "Специальность";
+"DOCTOR_LIST_FILTER_BLOCK_VIEW.SELECT_DOCTOR.ALLERT.MESSAGE" = "Выберите специальность врача из списка";
+"DOCTOR_LIST_FILTER_BLOCK_VIEW.TAB_BAR_ITEM.TITLE" = "Специалисты";
+
+// ProfileEditViewController
+"PROFILE_EDIT_VIEW_CONTROLLER.CHANGE_PHONE.ALERT.TITLE" = "Изменить номер телефона";
+"PROFILE_EDIT_VIEW_CONTROLLER.CHANGE_PHONE.ALERT.MESSAGE" = "Введите новый номер";
+"PROFILE_EDIT_VIEW_CONTROLLER.CHANGE_PHONE.SUCCESS.ALERT.TITLE" = "Телефон успешно изменен";
+"PROFILE_EDIT_VIEW_CONTROLLER.NEW_PHONE_THE_SAME.ERROR.ALERT.TITLE" = "Номер телефона на был изменен";
+"PROFILE_EDIT_VIEW_CONTROLLER.NEW_PHONE_THE_SAME.ERROR.ALERT.MESSAGE" = "Введенный номер идентичен текущему";
+
+// GroupRoleSelector
+"GROUP_ROLE_SELECTOR.CHILD.TITLE" = "Ребенок";
+
+// LoginAsMemberDelegate
+"LOGIN_AS_MEMBER_DELEGATE.LOGIN_AS_MEMBER.ERROR.RESULT" = "Произошла ошибка с кодом = %@";
+"LOGIN_AS_MEMBER_DELEGATE.LOGIN_AS_MEMBER.ERROR.LOAD_PROFILE" = "Не удалось загрузить профиль участника";
+"LOGIN_AS_MEMBER_DELEGATE.LOGIN_AS_MEMBER.SUCCESS" = "Вы вошли в учетную запись пользователя %@";
+"LOGIN_AS_MEMBER_DELEGATE.RETURN_TO_OWN_ACC.SUCCESS" = "Вы вернулись в свою учетную запись";
+
+// TMKSupportVC
+"TMK_SUPPORT_VC.TITLE_LABEL" = "Остались вопросы?";
+"TMK_SUPPORT_VC.DESCRIPTION" = "Если у вас остались вопросы, \nнаши менеджеры помогут Вам.";
+"TMK_SUPPORT_VC.HEADER.FOR_RUSSIA" = "Для России";
+"TMK_SUPPORT_VC.HEADER.FOR_FOREIGN" = "Для других стран";
+
+// IncomingCallAlertVC
+"INCOMING_CALL_ALERT_VC.AUDIO" = "Аудио";
+"INCOMING_CALL_ALERT_VC.VIDEO" = "Видео";
+"INCOMING_CALL_ALERT_VC.CANCEL" = "Отклонить";
+
+// SexSelector
+"SEX_SELECTOR.TITLE" = "Пол";
+"SEX_SELECTOR.MALE.TITLE" = "Мужской";
+"SEX_SELECTOR.FEMALE.TITLE" = "Женский";
+
+// HideShowPasswordTextField
+"HIDE_SHOW_PASSWORD_TEXT_FIELD.TITLE" = "Пароль (не обязательно)";
+
+// NotificationSettingsVC
+"NOTIFICATION_SETTINGS_VC.TITLE" = "Уведомления";
+"NOTIFICATION_SETTINGS_VIEW_MODEL.ERROR.CANT_LOAD_AVAILABLE_SETTINGS" = "Нет доступных для вас настроек оповещений";
+"NOTIFICATION_SETTINGS_VC.NOTHING_TO_SHOW.LABEL" = "Нет доступных настроек";
+
+// NotificationReceiverSelectorTapBar
+"NOTIFICATION_RECEIVER_SELECTOR_TAP_BAR.BUTTON.IN_APP" = "В приложении";
+"NOTIFICATION_RECEIVER_SELECTOR_TAP_BAR.BUTTON.BY_SMS" = "По смс";
+"NOTIFICATION_RECEIVER_SELECTOR_TAP_BAR.BUTTON.BY_EMAIL" = "На e-mail";
+
+// ErrorService
+"ERROR.TOO_MANY_SPECIALTY_APPOINTMENTS.TITLE" = "Вы уже записаны к врачу специальности %@";
+"ERROR.TOO_MANY_SPECIALTY_APPOINTMENTS.MESSAGE" = "К врачам по специальности %@ одновременно можно записаться только %@, и вы это уже сделали";
+"ERROR.TOO_MANY_DOCTOR_APPOINTMENTS.TITLE" = "Вы уже записаны к этому врачу";
+"ERROR.TOO_MANY_DOCTOR_APPOINTMENTS.MESSAGE" = "К врачу %@ одновременно можно записаться только %@, и вы это уже сделали";
+
+
+// RegistrationByNameVC
+"REGISTRATION_BY_NAME_VC.TITLE" = "Регистрация";
+"REGISTRATION_BY_NAME.LAST_NAME.TITLE" = "Фамилия";
+"REGISTRATION_BY_NAME.FIRST_NAME.TITLE" = "Имя";
+"REGISTRATION_BY_NAME.BIRTHDAY.TITLE" = "Дата рождения";
+"REGISTRATION_BY_NAME.MIDDLE_NAME.TITLE" = "Отчество";
+"REGISTER.FIRST_NAME.VALIDATION.REQUIRED" = "Необходимо ввести имя";
+"REGISTER.LAST_NAME.VALIDATION.REQUIRED" = "Необходимо ввести фамилию";
+"REGISTER.BIRTHDAY.VALIDATION.REQUIRED" = "Необходимо ввести дату рождения";
+"REGISTER.PHONE.VALIDATION.REQUIRED" = "Необходимо ввести телефон";
+"REGISTER.PHONE.VALIDATION.PATTERN" = "Не верный формат телефона";
+"REGISTRATION_BY_NAME.PROGRESS.TITLE" = "Регистрация";
+"REGISTRATION_BY_NAME.PROGRESS.SUB_TITLE" = "Пожалуйста подождите";
+"REGISTRATION_BY_NAME.BUTTON.TITLE" = "Зарегистрироваться";
+
+// SexSelector
+"SEX_SELECTOR.TITLE" = "Пол";
+"SEX_SELECTOR.MALE.TITLE" = "Мужской";
+"SEX_SELECTOR.FEMALE.TITLE" = "Женский";
+
+// PromocodeService
+"PROMCODE_SERVICE.ACCEPT_PROMOCODE.NOT_FOUND.ERROR" = "Неверный промокод";
+
+// ConditionSectionHeaderView
+"CONDITION_SECTION_HEADER_VIEW.ACTIVE.TITLE" = "Активные условия";
+"CONDITION_SECTION_HEADER_VIEW.ACTIVE.SUB_TITLE" = "";
+"CONDITION_SECTION_HEADER_VIEW.PASSIVE.TITLE" = "Неактивные условия";
+"CONDITION_SECTION_HEADER_VIEW.PASSIVE.SUB_TITLE" = "Чтобы воспользоваться услугами со скидкой, внесите оплату в соответсвии с условиями договора.";
+"CONDITION_SECTION_HEADER_VIEW.OLD.TITLE" = "История условий обслуживания";
+"CONDITION_SECTION_HEADER_VIEW.OLD.SUB_TITLE" = "";
+
+// ManyPromocodesView
+"MANY_PROMOCODES_VIEW.ADD_BUTTON.TITLE" = "Добавить промокод";
+"MANY_PROMOCODES_VIEW.ALERT.TITLE" = "Промокод";
+"MANY_PROMOCODES_VIEW.PROMOCODE_ACCEPTED.TITLE" = "Поздравляем";
+"MANY_PROMOCODES_VIEW.PROMOCODE_ACCEPTED.TEXT" = "Промокод '%@' активирован";
+"MANY_PROMOCODES_VIEW.PROMOCODE_ACCEPTED.NOT_ACTIVE.TITLE" = "Промокод успешно активирован";
+"MANY_PROMOCODES_VIEW.PROMOCODE_ACCEPTED.NOT_ACTIVE.TEXT" = "Услуги с новыми условиями обслуживания станут доступны позже";
+"MANY_PROMOCODES_VIEW.TEXT_FIELD.PLACEHOLDER" = "Введите код";
+
+// TMKPromocodeView
+"TMK_PROMOCODE_VIEW.ADD_PROMOCODE.TITLE" = "Добавить промокод";
+"TMK_PROMOCODE_VIEW.PROMOCODE.ALERT.TITLE" = "Промокод";
