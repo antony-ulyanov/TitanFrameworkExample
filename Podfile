@@ -7,7 +7,7 @@ target 'TestAdding2' do
   use_frameworks!
 
   # Pods for TestAdding2
-  pod 'TitanFramework', '1.4.9-dev'
+  pod 'TitanFramework', '1.4.11-dev'
 
 end
 

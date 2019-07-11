@@ -186,4 +186,8 @@ class ExampleTheme: NSObject, TMKTheme {
     func isShowMainTabBar() -> Bool {
         return true
     }
+
+    func getNavigationElementsColor() -> UIColor {
+        return .TMKDarkText
+    }
 }
