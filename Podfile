@@ -6,14 +6,16 @@ target 'TestAdding2' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
+  #
   # Pods for TestAdding2
-  pod 'TitanFramework', '1.4.11-dev'
+  pod 'TitanFramework', :git => 'https://github.com/antony-ulyanov/TitanFrameworkDistribution.git', :tag => '1.4.14'
+  #:commit => 'aea4a07'
 
 end
 
  post_install do |installer|
 
-   auto_process_target(['TestAdding2'], installer)
+#   auto_process_target(['TestAdding2'], installer)
 
  end
 

@@ -8,7 +8,7 @@ PODS:
   - Gloss (2.1.1)
   - GoogleWebRTC (1.1.20621)
   - InputMask (4.0.2)
-  - IQKeyboardManagerSwift (6.4.0)
+  - IQKeyboardManagerSwift (6.4.1)
   - MBProgressHUD (1.1.0)
   - Mixpanel-swift (2.5.9):
     - Mixpanel-swift/Complete (= 2.5.9)
@@ -26,7 +26,7 @@ PODS:
   - RxSwift (4.5.0)
   - SnapKit (4.2.0)
   - SwiftDate (5.0.13)
-  - TitanFramework (1.4.11-dev):
+  - TitanFramework (1.4.14):
     - Alamofire (~> 4.4)
     - Crashlytics (~> 3.12.0)
     - FontBlaster (~> 4.1.0)
@@ -52,7 +52,7 @@ PODS:
     - ObjcExceptionBridging
 
 DEPENDENCIES:
-  - TitanFramework (= 1.4.11-dev)
+  - TitanFramework (from `https://github.com/antony-ulyanov/TitanFrameworkDistribution.git`, tag `1.4.14`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -73,10 +73,19 @@ SPEC REPOS:
     - RxSwift
     - SnapKit
     - SwiftDate
-    - TitanFramework
     - "UITextView+Placeholder"
     - Validator
     - XCGLogger
+
+EXTERNAL SOURCES:
+  TitanFramework:
+    :git: https://github.com/antony-ulyanov/TitanFrameworkDistribution.git
+    :tag: 1.4.14
+
+CHECKOUT OPTIONS:
+  TitanFramework:
+    :git: https://github.com/antony-ulyanov/TitanFrameworkDistribution.git
+    :tag: 1.4.14
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -87,7 +96,7 @@ SPEC CHECKSUMS:
   Gloss: 9df15229b2f6484c14752a738474fd2528b4c5cd
   GoogleWebRTC: bdc7453b450d0970aee538b1297f670d7234a0b1
   InputMask: b9df7a44c044f59485b2d596661e6bd4334bddb4
-  IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
+  IQKeyboardManagerSwift: d2df660d0b8d64a15cb2537c9ff303213fa515b2
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   Mixpanel-swift: 4a2e061c8b7a5000ed7f72d2a6196884b5de8b49
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
@@ -96,11 +105,11 @@ SPEC CHECKSUMS:
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftDate: f4aea5fa9dee812485f34041121a4cbde01b0dee
-  TitanFramework: 59899eb00f202065b7ff65b74ab2bb25482f0ccb
+  TitanFramework: 0361f2867c3ad2ef31a4a0898ce3ef9b2a166cb0
   "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
   Validator: b34ab17a8fffd0c1ffd8f9002ead4d1e02cd9e6e
   XCGLogger: 7f7f43f15dfe3a305fa1342b7dc29af656289abd
 
-PODFILE CHECKSUM: e1a3bb404690a0fd1eacc7cc5e9ba198c911ca56
+PODFILE CHECKSUM: d4e1d7681b3460104279d56a47a75536eb24a13d
 
 COCOAPODS: 1.7.1

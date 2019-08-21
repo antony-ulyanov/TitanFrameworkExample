@@ -10,6 +10,10 @@ import UIKit
 import TitanFramework
 
 class ExampleTheme: NSObject, TMKTheme {
+    func isKeyboardToolBarEnabled() -> Bool {
+        return true
+    }
+    
 
     func isHideRegistrationButton() -> Bool {
         return false

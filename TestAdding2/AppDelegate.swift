@@ -28,43 +28,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        initLogger()
-        log2.debug("start init")
-        Fabric.with([Crashlytics.self])
-
-        let BarButtonItemAppearance = UIBarButtonItem.appearance()
-        BarButtonItemAppearance.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)
-        
-        // Override point for customization after application launch.
-        MimasManager.sharedInstance.initialize(window, application, ExampleTheme())
-        MimasManager.sharedInstance.initPush()
-        MimasManager.sharedInstance.delegate = self
-
-        if #available(iOS 10.0, *) {
-            let center = UNUserNotificationCenter.current()
-            center.delegate = self
-            let temp = MimasManager.sharedInstance.getNotificationCategory()
-            log2.debug("temp = \(temp)")
-            center.requestAuthorization(options: [.alert, .sound,. badge]) { (granted, error) in
-                if (granted) {
-                    print("User notifications granted")
-
-                    center.setNotificationCategories([temp])
-
-                    DispatchQueue.main.async(execute: {
-                        UIApplication.shared.registerForRemoteNotifications()
-                    })
-                } else {
-                    print("User notifications access DENIED")
-                    print("error = \(error)")
-                }
-            }
-            center.removeAllPendingNotificationRequests()
-            center.removeAllDeliveredNotifications()
-        }
-        MimasManager.sharedInstance.initNotifications()
-//        MimasManager.sharedInstance.setLogLevel(.error)
-        log2.debug("finish init")
+//        initLogger()
+//        log2.debug("start init")
+//        Fabric.with([Crashlytics.self])
+//
+//        let BarButtonItemAppearance = UIBarButtonItem.appearance()
+//        BarButtonItemAppearance.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)
+//
+//        // Override point for customization after application launch.
+//        MimasManager.sharedInstance.initialize(window, application, ExampleTheme())
+//        MimasManager.sharedInstance.initPush()
+//        MimasManager.sharedInstance.delegate = self
+//
+//        if #available(iOS 10.0, *) {
+//            let center = UNUserNotificationCenter.current()
+//            center.delegate = self
+//            let temp = MimasManager.sharedInstance.getNotificationCategory()
+//            log2.debug("temp = \(temp)")
+//            center.requestAuthorization(options: [.alert, .sound,. badge]) { (granted, error) in
+//                if (granted) {
+//                    print("User notifications granted")
+//
+//                    center.setNotificationCategories([temp])
+//
+//                    DispatchQueue.main.async(execute: {
+//                        UIApplication.shared.registerForRemoteNotifications()
+//                    })
+//                } else {
+//                    print("User notifications access DENIED")
+//                    print("error = \(error)")
+//                }
+//            }
+//            center.removeAllPendingNotificationRequests()
+//            center.removeAllDeliveredNotifications()
+//        }
+//        MimasManager.sharedInstance.initNotifications()
+////        MimasManager.sharedInstance.setLogLevel(.error)
+//        log2.debug("finish init")
 
         return true
     }

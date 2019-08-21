@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MimasVC.swift
 //  TestAddingTitanFramework
 //
 //  Created by ANTON ULYANOV on 22.06.2018.
@@ -10,16 +10,12 @@ import UIKit
 import TitanFramework
 import UITextView_Placeholder
 
-class ViewController: UIViewController {
-    
-    @IBOutlet weak var userDataTextView: UITextView!
-    @IBOutlet weak var appointmentId: UITextField!
+class MimasVC: UIViewController {
+
+    var window: UIWindow?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userDataTextView.placeholder = "{\"deviceType\":\"IOS\",\"login\":\"zzz@zz.zz\",\"password\":\"1234\"}"
-        
-        MimasManager.sharedInstance.setRootViewController(self)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -29,6 +25,16 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func initializeMimasAction(_ sender: Any) {
+        let app = UIApplication.shared
+        window = (app.delegate as? AppDelegate)?.window
+        
+        MimasManager.sharedInstance.initialize(window, app, ExampleTheme())
+        MimasManager.sharedInstance.initPush()
+        MimasManager.sharedInstance.delegate = self
+        MimasManager.sharedInstance.setRootViewController(self)
+    }
+
     @IBAction func loginAction(_ sender: Any) {
         MimasManager.sharedInstance.api.login(token: "325859d2-af32-4579-81f0-e5fda43827a8", onSuccess: {
             print("±±±±±1")
@@ -54,6 +60,7 @@ class ViewController: UIViewController {
                 MimasManager.sharedInstance.requestPermissions()
                 let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId)
                 print("openChatAction chatVC = \(chatVC)")
+                self.navigationController?.isNavigationBarHidden = false
                 self.navigationController?.pushViewController(chatVC, animated: true)
             }
         }, onError: { error in
@@ -82,3 +89,42 @@ class ViewController: UIViewController {
     }
 }
 
+
+extension MimasVC: MimasManagerDelegate {
+    func didReceiveDoctorCall(_ appointmentId: String?) {
+        DispatchQueue.main.async {
+            var navVC: UINavigationController
+            if let rootVC = self.window!.rootViewController {
+                print(">> rootVC = \(rootVC)")
+                if let existNavVc = rootVC as? UINavigationController {
+                    print(">> existNavVc = \(existNavVc)")
+                    navVC = existNavVc
+                } else {
+                    print(">> not existNavVc")
+                    if let rootNavVC = rootVC.navigationController {
+                        print(">> rootNavVC = \(rootNavVC)")
+                        navVC = rootNavVC
+                    } else {
+                        navVC = UINavigationController(rootViewController: rootVC)
+                    }
+                }
+            } else {
+                navVC = UINavigationController()
+                self.window!.rootViewController = navVC
+                self.window!.makeKeyAndVisible()
+            }
+
+            // Open chat
+            if var vc = navVC.viewControllers.last as? ChatVCProtocol {
+//                        vc.appointmentId = appointmentId
+                // Chat window is already openned
+                return
+            }
+
+            let chatVC = MimasManager.sharedInstance.getChatScreen(appointmentId!)
+            print(">> chatVC = \(chatVC)")
+            navVC.pushViewController(chatVC, animated: true)
+            print(">> navVC.viewControllers = \(navVC.viewControllers)")
+        }
+    }
+}
