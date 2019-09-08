@@ -140,6 +140,15 @@
                                     <action selector="initializeMimasAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qe2-1g-ZDx"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="JSESSIONID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2SB-XD-2Jn">
+                                <rect key="frame" x="91" y="226" width="187" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="m8S-Qn-SWR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSU-Et-lsu">
                                 <rect key="frame" x="170.5" y="280" width="34" height="30"/>
                                 <state key="normal" title="login"/>
@@ -157,12 +166,17 @@
                             <constraint firstItem="X0y-TG-349" firstAttribute="centerX" secondItem="pSU-Et-lsu" secondAttribute="centerX" id="GN1-Xi-49g"/>
                             <constraint firstItem="X0y-TG-349" firstAttribute="top" secondItem="pSU-Et-lsu" secondAttribute="bottom" constant="71" id="RbC-w8-mCy"/>
                             <constraint firstItem="ChI-fz-5kN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="51" id="TUM-4K-eo9"/>
+                            <constraint firstItem="pSU-Et-lsu" firstAttribute="top" secondItem="2SB-XD-2Jn" secondAttribute="bottom" constant="24" id="dct-Bh-WXk"/>
                             <constraint firstItem="rQa-c0-O29" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="137" id="hJG-hx-fsK"/>
                             <constraint firstItem="rQa-c0-O29" firstAttribute="trailing" secondItem="ChI-fz-5kN" secondAttribute="trailing" id="q1S-XC-qp4"/>
+                            <constraint firstItem="2SB-XD-2Jn" firstAttribute="centerX" secondItem="pSU-Et-lsu" secondAttribute="centerX" constant="-3" id="qzt-i0-wUp"/>
                             <constraint firstItem="ChI-fz-5kN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="39" id="shS-nt-mQW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="foz-C3-fWJ"/>
+                    <connections>
+                        <outlet property="jsessionInput" destination="2SB-XD-2Jn" id="Krx-ti-YEa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

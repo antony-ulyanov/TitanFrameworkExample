@@ -8,7 +8,7 @@ target 'TestAdding2' do
 
   #
   # Pods for TestAdding2
-  pod 'TitanFramework', :git => 'https://github.com/antony-ulyanov/TitanFrameworkDistribution.git', :tag => '1.4.14'
+  pod 'TitanFramework', :git => 'https://github.com/antony-ulyanov/TitanFrameworkDistribution.git', :tag => '1.4.16'
   #:commit => 'aea4a07'
 
 end

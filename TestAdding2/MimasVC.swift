@@ -14,6 +14,7 @@ class MimasVC: UIViewController {
 
     var window: UIWindow?
     
+    @IBOutlet weak var jsessionInput: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -36,7 +37,7 @@ class MimasVC: UIViewController {
     }
 
     @IBAction func loginAction(_ sender: Any) {
-        MimasManager.sharedInstance.api.login(token: "325859d2-af32-4579-81f0-e5fda43827a8", onSuccess: {
+        MimasManager.sharedInstance.api.login(sessionId: jsessionInput.text ?? "", onSuccess: {
             print("±±±±±1")
             MimasManager.sharedInstance.api.sendAPNSToken()
             self.showInfoAlert(message: "Успешно")
@@ -44,6 +45,14 @@ class MimasVC: UIViewController {
             print("±±±±±2 \(error)")
             self.showInfoAlert(message: error)
         })
+//        MimasManager.sharedInstance.api.login(token: "325859d2-af32-4579-81f0-e5fda43827a8", onSuccess: {
+//            print("±±±±±1")
+//            MimasManager.sharedInstance.api.sendAPNSToken()
+//            self.showInfoAlert(message: "Успешно")
+//        }, onError: { error in
+//            print("±±±±±2 \(error)")
+//            self.showInfoAlert(message: error)
+//        })
     }
     
     @IBAction func startTMKTitanAction(_ sender: Any) {

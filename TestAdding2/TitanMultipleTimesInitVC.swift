@@ -48,7 +48,7 @@ class TitanMultipleTimesInitVC: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    //    // Входная точка для взаимодействия с сдк
+        // Входная точка для взаимодействия с сдк
 //    static func start(parent: UIViewController, sessionId: String, appointmentId: String, partner: TelemedPartner) -> Completable {
 //        let theme = MedlineSDKTheme(serverUrl: partner.serverUrl) // меняется только адрес сервера
 //        let app = UIApplication.shared let window = (app.delegate as? App)?.window // Вызываем инициализацию прямо перед открытием чата
