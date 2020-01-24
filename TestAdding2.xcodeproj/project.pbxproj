@@ -17,6 +17,7 @@
 		0A014DF620E2DE15002B5694 /* logoVerticalDrclinics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A014DED20E2DE15002B5694 /* logoVerticalDrclinics@2x.png */; };
 		0A014DF720E2DE15002B5694 /* logoVerticalDrclinics@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A014DEE20E2DE15002B5694 /* logoVerticalDrclinics@3x.png */; };
 		0A014DFC20E2DF38002B5694 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 0A014DF920E2DF38002B5694 /* Localizable.stringsdict */; };
+		0A20136723DAF8E600146E16 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A20136623DAF8E600146E16 /* CallKit.framework */; };
 		0A42828D20E0EA2F0092C957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42828C20E0EA2F0092C957 /* AppDelegate.swift */; };
 		0A42828F20E0EA2F0092C957 /* MimasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42828E20E0EA2F0092C957 /* MimasVC.swift */; };
 		0A42829220E0EA2F0092C957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A42829020E0EA2F0092C957 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		0A014DED20E2DE15002B5694 /* logoVerticalDrclinics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoVerticalDrclinics@2x.png"; sourceTree = "<group>"; };
 		0A014DEE20E2DE15002B5694 /* logoVerticalDrclinics@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoVerticalDrclinics@3x.png"; sourceTree = "<group>"; };
 		0A014DFA20E2DF38002B5694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = Base; path = Base.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		0A20136623DAF8E600146E16 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
 		0A3B749D2179D7AF00FECAA4 /* TestAdding2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestAdding2.entitlements; sourceTree = "<group>"; };
 		0A42828920E0EA2F0092C957 /* TestAdding2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAdding2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A42828C20E0EA2F0092C957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA24B8C4DA608FD8772F10DB /* Pods_TestAdding2.framework in Frameworks */,
+				0A20136723DAF8E600146E16 /* CallKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +129,7 @@
 		670DEE75921041A5699866CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A20136623DAF8E600146E16 /* CallKit.framework */,
 				7BED2DACFB1A9BC2C1A9A541 /* Pods_TestAdding2.framework */,
 			);
 			name = Frameworks;

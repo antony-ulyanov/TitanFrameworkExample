@@ -194,4 +194,12 @@ class ExampleTheme: NSObject, TMKTheme {
     func getNavigationElementsColor() -> UIColor {
         return .TMKDarkText
     }
+
+    func isShowForgotPasswordButton() -> Bool {
+        return true
+    }
+
+    func getCodeCountry() -> String {
+        return ""
+    }
 }

@@ -54,6 +54,14 @@ class MimasVC: UIViewController {
 //            self.showInfoAlert(message: error)
 //        })
     }
+
+    @IBAction func logoutAction(_ sender: Any) {
+        MimasManager.sharedInstance.api.logout(onSuccess: {
+            self.showInfoAlert(message: "logout")
+        }, onError: { error in
+            self.showInfoAlert(message: "logout error = \(error)")
+        })
+    }
     
     @IBAction func startTMKTitanAction(_ sender: Any) {
         print("openChatAction")

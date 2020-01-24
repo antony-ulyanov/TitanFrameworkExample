@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '9.0'
+ platform :ios, '10.0'
  source 'https://github.com/CocoaPods/Specs.git'
 
 target 'TestAdding2' do
@@ -8,7 +8,7 @@ target 'TestAdding2' do
 
   #
   # Pods for TestAdding2
-  pod 'TitanFramework', :git => 'https://github.com/antony-ulyanov/TitanFrameworkDistribution.git', :tag => '1.4.16'
+  pod 'TitanFramework', '~> 1.4.25'
   #:commit => 'aea4a07'
 
 end
