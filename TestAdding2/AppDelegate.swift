@@ -12,8 +12,8 @@ import UserNotifications
 import PushKit
 import CallKit
 import XCGLogger
-import Crashlytics
-import Fabric
+//import Crashlytics
+//import Fabric
 
 let log2 = XCGLogger.default
 

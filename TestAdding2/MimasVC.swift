@@ -34,18 +34,13 @@ class MimasVC: UIViewController {
         MimasManager.sharedInstance.initPush()
         MimasManager.sharedInstance.delegate = self
         MimasManager.sharedInstance.setRootViewController(self)
+        MimasManager.sharedInstance.api.setDeviceId("f18cffe449c0219c956f5c986dfec763130f84d6b917b34bf92cdfc634e2b197")
     }
 
     @IBAction func loginAction(_ sender: Any) {
-        MimasManager.sharedInstance.api.login(sessionId: jsessionInput.text ?? "", onSuccess: {
-            print("±±±±±1")
-            MimasManager.sharedInstance.api.sendAPNSToken()
-            self.showInfoAlert(message: "Успешно")
-        }, onError: { error in
-            print("±±±±±2 \(error)")
-            self.showInfoAlert(message: error)
-        })
-//        MimasManager.sharedInstance.api.login(token: "325859d2-af32-4579-81f0-e5fda43827a8", onSuccess: {
+        print("loginAction")
+        print(jsessionInput.text)
+//        MimasManager.sharedInstance.api.login(sessionId: jsessionInput.text ?? "", onSuccess: {
 //            print("±±±±±1")
 //            MimasManager.sharedInstance.api.sendAPNSToken()
 //            self.showInfoAlert(message: "Успешно")
@@ -53,6 +48,27 @@ class MimasVC: UIViewController {
 //            print("±±±±±2 \(error)")
 //            self.showInfoAlert(message: error)
 //        })
+        
+//        MimasManager.sharedInstance.api.login(login: "lolka", password: "Qwertyq1", onSuccess: {
+//            print("±±±±±1")
+//            MimasManager.sharedInstance.api.sendAPNSToken()
+//            self.showInfoAlert(message: "Успешно")
+//        }) { (error) in
+//            print("±±±±±2 \(error)")
+//            self.showInfoAlert(message: error)
+//        }
+        
+        // 72aad08e-33e1-43c8-91b3-767095f04366
+        // 9c636e7c-8e2f-4fca-8664-e78c38662375 - lolka
+        // f81a1fec-08a8-4e12-a2ee-07d8667cb743
+        MimasManager.sharedInstance.api.login(token: "5767225b-db14-40b6-a053-d0dbe379bf71", onSuccess: {
+            print("±±±±±1")
+            MimasManager.sharedInstance.api.sendAPNSToken()
+            self.showInfoAlert(message: "Успешно")
+        }, onError: { error in
+            print("±±±±±2 \(error)")
+            self.showInfoAlert(message: error)
+        })
     }
 
     @IBAction func logoutAction(_ sender: Any) {

@@ -1,6 +1,10 @@
 # Uncomment the next line to define a global platform for your project
  platform :ios, '10.0'
- source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+source 'http://bitbucket.medlinesoft.ru/scm/tmk/tmk-specs.git'
+# source 'https://github.com/yoomoney-tech/cocoa-pod-specs.git'
+# plugin 'cocoapods-user-defined-build-types'
+# enable_user_defined_build_types!
 
 target 'TestAdding2' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -8,7 +12,9 @@ target 'TestAdding2' do
 
   #
   # Pods for TestAdding2
-  pod 'TitanFramework', '~> 1.4.25'
+  # pod 'TitanFramework', '~> 1.4.25'
+  # pod 'YooKassaPayments', :build_type => :dynamic_framework, :git => 'https://github.com/yandex-money/yandex-checkout-payments-swift.git', :tag => '5.0.0'
+  pod 'TitanFramework', :git => 'https://github.com/antony-ulyanov/TitanFrameworkDistribution.git', :tag => '1.5.14'
   #:commit => 'aea4a07'
 
 end

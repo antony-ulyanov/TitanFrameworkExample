@@ -10,6 +10,40 @@ import UIKit
 import TitanFramework
 
 class ExampleTheme: NSObject, TMKTheme {
+    func isShowChangePasswordSettings() -> Bool {
+        return false
+    }
+    
+    func isShowLoginByEmail() -> Bool {
+        return true
+    }
+    
+    func isShowAboutCompanyLink() -> Bool {
+        return true
+    }
+    
+    func isShowPhoneNumberViews() -> Bool {
+        return true
+    }
+    
+    func isShowPromocodes() -> Bool {
+        return true
+    }
+    
+    func isShowAgeFilter() -> Bool {
+        return true
+    }
+    
+    func shouldCheckNextAppointment() -> Bool {
+        return false
+    }
+    
+    func shouldCheckRefuseAppointments() -> Bool {
+        return true
+    }
+    
+    
+    
     func isKeyboardToolBarEnabled() -> Bool {
         return true
     }
@@ -48,7 +82,8 @@ class ExampleTheme: NSObject, TMKTheme {
     }
     
     func getProductionServer() -> String {
-        return "https://telemed.medlinesoft.ru:8443"
+        return "https://test-telemed.drclinics.ru/"
+//        return "https://telemed.medlinesoft.ru:8447"
     }
     
     func getSupportPhone() -> String {
@@ -201,5 +236,54 @@ class ExampleTheme: NSObject, TMKTheme {
 
     func getCodeCountry() -> String {
         return ""
+    }
+    
+    // HealthDiary
+    func getHealthMainColor() -> UIColor {
+        return mainColor()
+    }
+
+    func getHealthSecondColor() -> UIColor {
+        return .white
+    }
+
+    func getHealthMeasureBackPlateColor() -> UIColor {
+        return UIColor(red: 0x3F, green: 0x92, blue: 0x3F, opacity: 1)
+    }
+
+    func getHealthMeasureTagCloudBackPlateColor() -> UIColor {
+        return .red
+    }
+
+    func getHealthBackPlateColor() -> UIColor {
+        return UIColor(red:0.94, green:0.95, blue:0.98, alpha:1.0)
+    }
+
+    func isPartnerOnly() -> Bool {
+        return false
+    }
+
+    func getAppleTestUserLogin() -> String? {
+        return nil
+    }
+
+    func isStartFromLoginView() -> Bool {
+        return true
+    }
+
+    func isShowTabBySMS() -> Bool {
+        return true
+    }
+
+    func getAppsFlyDevKey() -> String? {
+        return nil
+    }
+
+    func getAppsFlyAppId() -> String? {
+        return nil
+    }
+
+    func isShowESIALogin() -> Bool {
+        return false
     }
 }

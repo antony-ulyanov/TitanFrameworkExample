@@ -25,10 +25,32 @@
 		0A42829720E0EA320092C957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A42829520E0EA320092C957 /* LaunchScreen.storyboard */; };
 		0A4282A320E0ED220092C957 /* ExampleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4282A220E0ED210092C957 /* ExampleTheme.swift */; };
 		0A4282A620E0ED2B0092C957 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A4282A420E0ED2B0092C957 /* Localizable.strings */; };
+		0AFEFAC125DFA27B00C26252 /* TrustDefender SDK Readme.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0AFEFABE25DFA27B00C26252 /* TrustDefender SDK Readme.pdf */; };
+		0AFEFAC225DFA27B00C26252 /* TMXProfiling-Bitcode-6.0-91.dmg in Resources */ = {isa = PBXBuildFile; fileRef = 0AFEFABF25DFA27B00C26252 /* TMXProfiling-Bitcode-6.0-91.dmg */; };
+		0AFEFAC325DFA27B00C26252 /* TMXProfilingConnections-Bitcode-6.0-91.dmg in Resources */ = {isa = PBXBuildFile; fileRef = 0AFEFAC025DFA27B00C26252 /* TMXProfilingConnections-Bitcode-6.0-91.dmg */; };
+		0AFEFAC425DFA2C700C26252 /* TMXProfiling-Bitcode-6.0-91.dmg in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFEFABF25DFA27B00C26252 /* TMXProfiling-Bitcode-6.0-91.dmg */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0AFEFAC525DFA2C700C26252 /* TMXProfilingConnections-Bitcode-6.0-91.dmg in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFEFAC025DFA27B00C26252 /* TMXProfilingConnections-Bitcode-6.0-91.dmg */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0AFEFAC625DFA2C700C26252 /* TrustDefender SDK Readme.pdf in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFEFABE25DFA27B00C26252 /* TrustDefender SDK Readme.pdf */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		ABCA95A25E2920A634B2D0F7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA93478ACDBE6F739EF457 /* MainVC.swift */; };
 		ABCA9920B79E1CCFFB91ABDC /* TitanMultipleTimesInitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA9A8EDFC78A89462712F1 /* TitanMultipleTimesInitVC.swift */; };
 		CA24B8C4DA608FD8772F10DB /* Pods_TestAdding2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BED2DACFB1A9BC2C1A9A541 /* Pods_TestAdding2.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AFEF97225DAC71500C26252 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AFEFAC425DFA2C700C26252 /* TMXProfiling-Bitcode-6.0-91.dmg in Embed Frameworks */,
+				0AFEFAC525DFA2C700C26252 /* TMXProfilingConnections-Bitcode-6.0-91.dmg in Embed Frameworks */,
+				0AFEFAC625DFA2C700C26252 /* TrustDefender SDK Readme.pdf in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A014DE620E2DE15002B5694 /* ImagesDrclinics.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImagesDrclinics.xcassets; sourceTree = "<group>"; };
@@ -52,6 +74,9 @@
 		0A42829820E0EA320092C957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A4282A220E0ED210092C957 /* ExampleTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTheme.swift; sourceTree = "<group>"; };
 		0A4282A520E0ED2B0092C957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0AFEFABE25DFA27B00C26252 /* TrustDefender SDK Readme.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "TrustDefender SDK Readme.pdf"; path = "TestAdding2/Frameworks/TrustDefender SDK Readme.pdf"; sourceTree = "<group>"; };
+		0AFEFABF25DFA27B00C26252 /* TMXProfiling-Bitcode-6.0-91.dmg */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TMXProfiling-Bitcode-6.0-91.dmg"; path = "TestAdding2/Frameworks/TMXProfiling-Bitcode-6.0-91.dmg"; sourceTree = "<group>"; };
+		0AFEFAC025DFA27B00C26252 /* TMXProfilingConnections-Bitcode-6.0-91.dmg */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TMXProfilingConnections-Bitcode-6.0-91.dmg"; path = "TestAdding2/Frameworks/TMXProfilingConnections-Bitcode-6.0-91.dmg"; sourceTree = "<group>"; };
 		0E6DDD2EC408E55DD7817FE7 /* Pods-TestAdding2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.debug.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.debug.xcconfig"; sourceTree = "<group>"; };
 		7BED2DACFB1A9BC2C1A9A541 /* Pods_TestAdding2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAdding2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		973EDC50AAD44A3BF4D21339 /* Pods-TestAdding2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.release.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +154,9 @@
 		670DEE75921041A5699866CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AFEFABF25DFA27B00C26252 /* TMXProfiling-Bitcode-6.0-91.dmg */,
+				0AFEFAC025DFA27B00C26252 /* TMXProfilingConnections-Bitcode-6.0-91.dmg */,
+				0AFEFABE25DFA27B00C26252 /* TrustDefender SDK Readme.pdf */,
 				0A20136623DAF8E600146E16 /* CallKit.framework */,
 				7BED2DACFB1A9BC2C1A9A541 /* Pods_TestAdding2.framework */,
 			);
@@ -158,6 +186,7 @@
 				0A676BE021BA7C6F00955DDA /* ShellScript */,
 				2F82CE40762CC7BE9FC0AAF9 /* [CP] Embed Pods Frameworks */,
 				C28B400CA358D282C921E94E /* [CP] Copy Pods Resources */,
+				0AFEF97225DAC71500C26252 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,13 +247,16 @@
 				0A014DF120E2DE15002B5694 /* logoDrclinics.png in Resources */,
 				0A014DF420E2DE15002B5694 /* logoHeaderDrclinics@3x.png in Resources */,
 				0A014DF320E2DE15002B5694 /* logoHeaderDrclinics@2x.png in Resources */,
+				0AFEFAC325DFA27B00C26252 /* TMXProfilingConnections-Bitcode-6.0-91.dmg in Resources */,
 				0A42829720E0EA320092C957 /* LaunchScreen.storyboard in Resources */,
 				0A014DEF20E2DE15002B5694 /* ImagesDrclinics.xcassets in Resources */,
 				0A4282A620E0ED2B0092C957 /* Localizable.strings in Resources */,
 				0A42829420E0EA320092C957 /* Assets.xcassets in Resources */,
+				0AFEFAC225DFA27B00C26252 /* TMXProfiling-Bitcode-6.0-91.dmg in Resources */,
 				0A014DF620E2DE15002B5694 /* logoVerticalDrclinics@2x.png in Resources */,
 				0A014DF020E2DE15002B5694 /* LaunchScreenDrclinics.storyboard in Resources */,
 				0A42829220E0EA2F0092C957 /* Main.storyboard in Resources */,
+				0AFEFAC125DFA27B00C26252 /* TrustDefender SDK Readme.pdf in Resources */,
 				0A014DF220E2DE15002B5694 /* logoHeaderDrclinics.png in Resources */,
 				0A014DF720E2DE15002B5694 /* logoVerticalDrclinics@3x.png in Resources */,
 				0A014DF520E2DE15002B5694 /* logoVerticalDrclinics.png in Resources */,
@@ -250,7 +282,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\"\n\"${PODS_ROOT}/Fabric/run\" 9c855a3c916c6717f9b6d54fa1f4eebbac0dedfe a8e97557949524244c54532bd3548ba62b92c13da0c866da5123c7ae961e390f\n\n#bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/TitanFramework.framework/strip-frameworks.sh\"\n\n";
+			shellScript = "echo \"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\"\n#\"${PODS_ROOT}/Fabric/run\" 9c855a3c916c6717f9b6d54fa1f4eebbac0dedfe a8e97557949524244c54532bd3548ba62b92c13da0c866da5123c7ae961e390f\n\n#bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/TitanFramework.framework/strip-frameworks.sh\"\n\n";
 		};
 		2F82CE40762CC7BE9FC0AAF9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

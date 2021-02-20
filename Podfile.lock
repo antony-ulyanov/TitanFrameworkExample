@@ -1,47 +1,43 @@
 PODS:
-  - Alamofire (4.9.1)
-  - Crashlytics (3.12.0):
-    - Fabric (~> 1.9.0)
-  - Fabric (1.9.0)
+  - Alamofire (5.4.1)
   - FontBlaster (4.1.0)
-  - FSCalendar (2.8.1)
+  - FSCalendar (2.8.2)
   - Gloss (2.1.1)
-  - GoogleWebRTC (1.1.20621)
-  - InputMask (4.0.2)
-  - IQKeyboardManagerSwift (6.4.2)
+  - GoogleWebRTC (1.1.29400)
+  - InputMask (6.0.0)
+  - IQKeyboardManagerSwift (6.5.6)
   - MBProgressHUD (1.1.0)
-  - Mixpanel-swift (2.6.11):
-    - Mixpanel-swift/Complete (= 2.6.11)
-  - Mixpanel-swift/Complete (2.6.11)
+  - Mixpanel-swift (2.6.5):
+    - Mixpanel-swift/Complete (= 2.6.5)
+  - Mixpanel-swift/Complete (2.6.5)
   - ObjcExceptionBridging (1.0.1):
     - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
   - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
-  - RxAlamofire (5.1.0):
-    - RxAlamofire/Core (= 5.1.0)
-  - RxAlamofire/Core (5.1.0):
-    - Alamofire (~> 4.8)
-    - RxSwift (~> 5.0)
-  - RxCocoa (5.0.1):
+  - RxAlamofire (5.7.1):
+    - RxAlamofire/Core (= 5.7.1)
+  - RxAlamofire/Core (5.7.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
-  - RxRelay (5.0.1):
+  - RxRelay (5.1.1):
     - RxSwift (~> 5)
-  - RxSwift (5.0.1)
-  - SnapKit (4.2.0)
+  - RxSwift (5.1.1)
+  - SnapKit (5.0.1)
   - SwiftDate (5.0.13)
-  - TitanFramework (1.4.25):
-    - Crashlytics (~> 3.12.0)
+  - TitanFramework (1.5.14):
     - FontBlaster (~> 4.1.0)
     - FSCalendar (~> 2.8.0)
     - Gloss (~> 2.0)
-    - GoogleWebRTC (= 1.1.20621)
-    - InputMask (~> 4.0.1)
-    - IQKeyboardManagerSwift (~> 6.4.2)
+    - GoogleWebRTC (= 1.1.29400)
+    - InputMask (~> 6.0.0)
+    - IQKeyboardManagerSwift (~> 6.5.5)
     - MBProgressHUD (~> 1.1.0)
-    - Mixpanel-swift (~> 2.6.5)
-    - RxAlamofire (~> 5.1)
-    - RxCocoa (~> 5.0)
-    - SnapKit (~> 4.2.0)
+    - Mixpanel-swift (= 2.6.5)
+    - RxAlamofire (~> 5.2)
+    - RxCocoa (~> 5.1)
+    - SnapKit (~> 5.0)
     - SwiftDate (~> 5.0.13)
     - "UITextView+Placeholder (~> 1.3.3)"
     - Validator (~> 3.2.1)
@@ -54,13 +50,11 @@ PODS:
     - ObjcExceptionBridging
 
 DEPENDENCIES:
-  - TitanFramework (~> 1.4.25)
+  - TitanFramework (from `https://github.com/antony-ulyanov/TitanFrameworkDistribution.git`, tag `1.5.14`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
-    - Crashlytics
-    - Fabric
     - FontBlaster
     - FSCalendar
     - Gloss
@@ -76,35 +70,42 @@ SPEC REPOS:
     - RxSwift
     - SnapKit
     - SwiftDate
-    - TitanFramework
     - "UITextView+Placeholder"
     - Validator
     - XCGLogger
 
+EXTERNAL SOURCES:
+  TitanFramework:
+    :git: https://github.com/antony-ulyanov/TitanFrameworkDistribution.git
+    :tag: 1.5.14
+
+CHECKOUT OPTIONS:
+  TitanFramework:
+    :git: https://github.com/antony-ulyanov/TitanFrameworkDistribution.git
+    :tag: 1.5.14
+
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
-  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
-  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
   Gloss: 9df15229b2f6484c14752a738474fd2528b4c5cd
-  GoogleWebRTC: bdc7453b450d0970aee538b1297f670d7234a0b1
-  InputMask: b9df7a44c044f59485b2d596661e6bd4334bddb4
-  IQKeyboardManagerSwift: 79a3ec200dfb41cb66a89b8575417b5378107c5d
+  GoogleWebRTC: cfb83bc346435a17fe06bb05f04ad826b858a7fb
+  InputMask: f340bdc905a4c4f377e44d865f129f752ac2383d
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  Mixpanel-swift: b42560376413286f51af2cfb9d0d4edc61c1a105
+  Mixpanel-swift: 1542908cda2c3858027e1d38f31f34fb6b16f4fc
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
-  RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
-  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
-  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
-  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  RxAlamofire: 8e144c62dcc01d68dcb366bfc542eb6dd46bab78
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftDate: f4aea5fa9dee812485f34041121a4cbde01b0dee
-  TitanFramework: b5f9cf4f7c4fb732958d652cd47d14587ae3a0c9
+  TitanFramework: 914d83b9b7a4e47940a745422a20a002a19a9ca9
   "UITextView+Placeholder": c407b27599ea23cca425946fee3cf1db5d547008
   Validator: 80a6f567220c962dfd2d9928ae98a8c1d164f6f4
   XCGLogger: 7f7f43f15dfe3a305fa1342b7dc29af656289abd
 
-PODFILE CHECKSUM: 27c5fe4eddf418895f588cd0839f59dc7518a2da
+PODFILE CHECKSUM: cd78f9612976599d591453e746a22daa05971c67
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.1
