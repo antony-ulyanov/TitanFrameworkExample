@@ -10,6 +10,10 @@ import UIKit
 import TitanFramework
 
 class ExampleTheme: NSObject, TMKTheme {
+    func isSendLogs() -> Bool {
+        return false
+    }
+    
     func isShowChangePasswordSettings() -> Bool {
         return false
     }
