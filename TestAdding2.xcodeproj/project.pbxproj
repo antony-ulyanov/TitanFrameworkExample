@@ -31,9 +31,9 @@
 		0AF3C1CB2638CAE500ED877E /* TMXProfilingConnections.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF3C1C72638CAE500ED877E /* TMXProfilingConnections.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AFEFAC125DFA27B00C26252 /* TrustDefender SDK Readme.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0AFEFABE25DFA27B00C26252 /* TrustDefender SDK Readme.pdf */; };
 		0AFEFAC625DFA2C700C26252 /* TrustDefender SDK Readme.pdf in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFEFABE25DFA27B00C26252 /* TrustDefender SDK Readme.pdf */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8C9E3F95E86071BD323F151D /* Pods_TestAdding2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D39C14D6ABF8DDD7201E3FF /* Pods_TestAdding2.framework */; };
 		ABCA95A25E2920A634B2D0F7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA93478ACDBE6F739EF457 /* MainVC.swift */; };
 		ABCA9920B79E1CCFFB91ABDC /* TitanMultipleTimesInitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA9A8EDFC78A89462712F1 /* TitanMultipleTimesInitVC.swift */; };
-		CA24B8C4DA608FD8772F10DB /* Pods_TestAdding2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BED2DACFB1A9BC2C1A9A541 /* Pods_TestAdding2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,11 +77,11 @@
 		0AF3C1C62638CAE500ED877E /* TMXProfiling.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TMXProfiling.xcframework; path = TestAdding2/Frameworks/TMXProfiling.xcframework; sourceTree = "<group>"; };
 		0AF3C1C72638CAE500ED877E /* TMXProfilingConnections.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TMXProfilingConnections.xcframework; path = TestAdding2/Frameworks/TMXProfilingConnections.xcframework; sourceTree = "<group>"; };
 		0AFEFABE25DFA27B00C26252 /* TrustDefender SDK Readme.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "TrustDefender SDK Readme.pdf"; path = "TestAdding2/Frameworks/TrustDefender SDK Readme.pdf"; sourceTree = "<group>"; };
-		0E6DDD2EC408E55DD7817FE7 /* Pods-TestAdding2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.debug.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.debug.xcconfig"; sourceTree = "<group>"; };
-		7BED2DACFB1A9BC2C1A9A541 /* Pods_TestAdding2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAdding2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		973EDC50AAD44A3BF4D21339 /* Pods-TestAdding2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.release.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.release.xcconfig"; sourceTree = "<group>"; };
+		9D39C14D6ABF8DDD7201E3FF /* Pods_TestAdding2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAdding2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABCA93478ACDBE6F739EF457 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		ABCA9A8EDFC78A89462712F1 /* TitanMultipleTimesInitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitanMultipleTimesInitVC.swift; sourceTree = "<group>"; };
+		C1ACDA47760D486345DEF602 /* Pods-TestAdding2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.debug.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.debug.xcconfig"; sourceTree = "<group>"; };
+		D843C783AD56D814CA7C8FB6 /* Pods-TestAdding2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAdding2.release.xcconfig"; path = "Target Support Files/Pods-TestAdding2/Pods-TestAdding2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +90,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AF3C1CA2638CAE500ED877E /* TMXProfilingConnections.xcframework in Frameworks */,
-				CA24B8C4DA608FD8772F10DB /* Pods_TestAdding2.framework in Frameworks */,
 				0A20136723DAF8E600146E16 /* CallKit.framework in Frameworks */,
 				0AF3C1C82638CAE500ED877E /* TMXProfiling.xcframework in Frameworks */,
+				8C9E3F95E86071BD323F151D /* Pods_TestAdding2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +160,7 @@
 				0AF3C1C72638CAE500ED877E /* TMXProfilingConnections.xcframework */,
 				0AFEFABE25DFA27B00C26252 /* TrustDefender SDK Readme.pdf */,
 				0A20136623DAF8E600146E16 /* CallKit.framework */,
-				7BED2DACFB1A9BC2C1A9A541 /* Pods_TestAdding2.framework */,
+				9D39C14D6ABF8DDD7201E3FF /* Pods_TestAdding2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,8 +168,8 @@
 		FC53018B9EF23464199A809B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0E6DDD2EC408E55DD7817FE7 /* Pods-TestAdding2.debug.xcconfig */,
-				973EDC50AAD44A3BF4D21339 /* Pods-TestAdding2.release.xcconfig */,
+				C1ACDA47760D486345DEF602 /* Pods-TestAdding2.debug.xcconfig */,
+				D843C783AD56D814CA7C8FB6 /* Pods-TestAdding2.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -181,14 +181,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A42829B20E0EA320092C957 /* Build configuration list for PBXNativeTarget "TestAdding2" */;
 			buildPhases = (
-				BB45547679F3CAA778DD7954 /* [CP] Check Pods Manifest.lock */,
+				EC191A2CB339D5C6ACAF9FA5 /* [CP] Check Pods Manifest.lock */,
 				0A42828520E0EA2F0092C957 /* Sources */,
 				0A42828620E0EA2F0092C957 /* Frameworks */,
 				0A42828720E0EA2F0092C957 /* Resources */,
 				0A676BE021BA7C6F00955DDA /* ShellScript */,
-				2F82CE40762CC7BE9FC0AAF9 /* [CP] Embed Pods Frameworks */,
-				C28B400CA358D282C921E94E /* [CP] Copy Pods Resources */,
 				0AFEF97225DAC71500C26252 /* Embed Frameworks */,
+				3546B26D344207D574929627 /* [CP] Embed Pods Frameworks */,
+				31D5CD5366F232892A36753D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,7 +284,24 @@
 			shellPath = /bin/sh;
 			shellScript = "echo \"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\"\n#\"${PODS_ROOT}/Fabric/run\" 9c855a3c916c6717f9b6d54fa1f4eebbac0dedfe a8e97557949524244c54532bd3548ba62b92c13da0c866da5123c7ae961e390f\n\n#bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/TitanFramework.framework/strip-frameworks.sh\"\n\n";
 		};
-		2F82CE40762CC7BE9FC0AAF9 /* [CP] Embed Pods Frameworks */ = {
+		31D5CD5366F232892A36753D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3546B26D344207D574929627 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -301,7 +318,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BB45547679F3CAA778DD7954 /* [CP] Check Pods Manifest.lock */ = {
+		EC191A2CB339D5C6ACAF9FA5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,23 +338,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C28B400CA358D282C921E94E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestAdding2/Pods-TestAdding2-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -509,7 +509,7 @@
 		};
 		0A42829C20E0EA320092C957 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E6DDD2EC408E55DD7817FE7 /* Pods-TestAdding2.debug.xcconfig */;
+			baseConfigurationReference = C1ACDA47760D486345DEF602 /* Pods-TestAdding2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -566,7 +566,7 @@
 		};
 		0A42829D20E0EA320092C957 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 973EDC50AAD44A3BF4D21339 /* Pods-TestAdding2.release.xcconfig */;
+			baseConfigurationReference = D843C783AD56D814CA7C8FB6 /* Pods-TestAdding2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
